@@ -3,20 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yoon Mi Mi Thant | Skills</title>
+<title>Yoon Mi Mi Thant | About</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #fff9f6; color: #665451; font-family: 'Poppins', sans-serif; }
-  nav { padding: 22px 8%; display: flex; justify-content: space-between; align-items: center; background: #fff0ed; position: sticky; top: 0; z-index: 10; }
-  .logo { font-family: 'Playfair Display', serif; font-size: 23px; color: #c77d8e; }
-  nav a { color: #725d59; text-decoration: none; margin-left: 20px; font-size: 13px; }
-  nav a:hover, nav a.active { color: #d58b9c; font-weight: 600; }
-  section { padding: 85px 10%; text-align: center; min-height: 75vh; display: flex; flex-direction: column; justify-content: center; }
-  .heading { font-family: 'Playfair Display', serif; color: #bd7889; font-size: 34px; margin-bottom: 30px; }
-  .skills { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
-  .skills span { background: #f9e5e8; padding: 13px 25px; border-radius: 30px; font-size: 13px; }
-  footer { background: #fff0ed; text-align: center; padding: 28px; font-size: 12px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff9f6;
+  color: #665451;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff0ed;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  color: #c77d8e;
+}
+
+nav a {
+  color: #725d59;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #d58b9c;
+  font-weight: 600;
+}
+
+section {
+  padding: 85px 10%;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-family: 'Playfair Display', serif;
+  color: #bd7889;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 35px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 8px 30px #d9b5b522;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+footer {
+  background: #fff0ed;
+  text-align: center;
+  padding: 28px;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 11px;
+  }
+
+  section {
+    padding: 65px 7%;
+  }
+}
 </style>
 </head>
 <body>
@@ -25,27 +111,30 @@
   <div class="logo">Yoon ♡</div>
   <div>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="skills.html" class="active">Skills</a>
-    <a href="projects.html">Projects</a>
+    <a href="about.html" class="active">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="project.html">Projects</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
 
 <section>
-  <h2 class="heading">My Skills ✨</h2>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Python</span>
-    <span>GitHub</span>
-    <span>Computer Vision</span>
+  <h2 class="heading">About Me 🌷</h2>
+  <div class="card">
+    <p>
+      Hello! I’m Yoon Mi Mi Thant.
+      I’m a Computer Science student with a passion for technology, programming and creative design.
+      I enjoy learning new skills and building projects that turn ideas into reality.
+      <br><br>
+      My journey is just beginning, and I’m excited about everything I’m going to create.
+    </p>
   </div>
 </section>
 
 <footer>
-  Made with ♡ by Yoon Mi Mi Thant <br> © 2026 All Rights Reserved
+  Made with ♡ by Yoon Mi Mi Thant
+  <br>
+  © 2026 All Rights Reserved
 </footer>
 
 </body>
